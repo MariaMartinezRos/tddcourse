@@ -6,9 +6,12 @@
 //
 //    $response->assertStatus(200);
 //});
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use function Pest\Laravel\get;
 
+uses(RefreshDatabase::class);
 //test segun el formato de phpstorm
 it('gives back successful response for home page', function () {
-    \Pest\Laravel\get(route('home'))
+    get(route('home'))
         ->assertOk();
 });
