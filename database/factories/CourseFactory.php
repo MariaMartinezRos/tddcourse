@@ -14,6 +14,14 @@ class CourseFactory extends Factory
     {
         return [
             'title' => $this->faker->sentence,
+            'slug' => $this->faker->slug,
+            'tagline' => $this->faker->sentence,
+            'image' => $this->faker->imageUrl(),
+            'learnings' => [
+                'Learn Laravel routes',
+                'Learn Laravel views',
+                'Learn Laravel commands',
+            ],
             'description' => $this->faker->paragraph,
         ];
     }
