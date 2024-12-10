@@ -19,7 +19,7 @@ class CourseFactory extends Factory
             'image' => $this->faker->imageUrl(),
             'learnings' => [
                 'Learn Laravel routes',
-                'Learn Laravel views',
+                'Learn Laravel views', //
                 'Learn Laravel commands',
             ],
             'description' => $this->faker->paragraph,
